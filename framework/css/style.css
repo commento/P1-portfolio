@@ -1,20 +1,20 @@
 
+/* For debug purpose
 * {
    outline: 1px solid red !important;
 }
+*/
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-
-}
 
 body{
 	font-family: Lato, sans-serif;
 	color: #2d3c49;
 	font-weight: 300;
+}
+
+hr {
+	border-color: #2d3c49;
+	border-width: 2px;
 }
 
 .text-muted {
@@ -31,9 +31,29 @@ body{
 }
 
 .title-logo {
+	width: 120px;
 	margin-top: 20px;
 }
 
 .img-responsive {
     margin: 0 auto;
+}
+
+@media screen and (min-width: 900px) {
+	.container {
+		width: 900px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.img-big {
+		display: none;
+	}
+	.title-super {
+		font-size: 35px;
+	}
+	.title-logo {
+		width: 80px;
+		margin-top: 5px;
+	}
 }
