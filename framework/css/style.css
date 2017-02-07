@@ -46,8 +46,8 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
-	.img-big {
-		display: none;
+	body {
+		font-size: 13px;
 	}
 	.title-super {
 		font-size: 35px;
@@ -55,5 +55,8 @@ hr {
 	.title-logo {
 		width: 80px;
 		margin-top: 5px;
+	}
+	.text-muted{
+		font-size: 30px;
 	}
 }
